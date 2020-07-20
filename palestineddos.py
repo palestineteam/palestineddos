@@ -2,7 +2,7 @@
 
 # -*- coding: utf-8 -*-
 
-# python 3.3.2+ Palestine DDos Script
+# python 3.3.2+ Palestine DDo
 
 # by TEAM PALESTINE DDOS
 
