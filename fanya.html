@@ -1,0 +1,171 @@
+<html lang="en">
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Untuk Fanya Aluna Shyfa ❤️</title>
+    <!-- Load Tailwind CSS -->
+    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    <!-- Load Custom Fonts (Gochi Hand for handwritten & Inter for body) -->
+    <style>
+        @import url('[https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Inter:wght@400;700&display=swap](https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Inter:wght@400;700&display=swap)');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Soft background gradient effect */
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4f46e5 100%);
+            overflow: hidden; /* Prevents scrolling when the button moves */
+        }
+
+        /* Custom font for the question, makes it feel personal */
+        .font-question {
+            font-family: 'Gochi Hand', cursive;
+        }
+
+        /* Set up the "No" button to be movable */
+        #no-button {
+            position: absolute;
+            transition: all 0.3s ease-in-out;
+            /* Ensure this button is on top of other elements when moving */
+            z-index: 10;
+        }
+
+        /* The "Yes" button will be on top if they overlap */
+        #yes-button {
+            position: relative;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen flex items-center justify-center p-4">
+
+    <!-- Main Content: The Question -->
+    <div id="main-content" class="bg-gray-900 bg-opacity-70 backdrop-blur-lg p-8 md:p-12 rounded-2xl shadow-2xl text-center max-w-lg w-full transition-all duration-500 ease-in-out transform scale-100 opacity-100">
+        <!-- Cute Opening GIF -->
+        <img src="[https://media2.giphy.com/media/JV7JGUNOIT4oMcwiNA/giphy.gif?cid=9b38fe9118mc52abuv861rgqc51sat69do8wh7s3bc9wkq3p&ep=v1_gifs_username&rid=giphy.gif&ct=g](https://media2.giphy.com/media/JV7JGUNOIT4oMcwiNA/giphy.gif?cid=9b38fe9118mc52abuv861rgqc51sat69do8wh7s3bc9wkq3p&ep=v1_gifs_username&rid=giphy.gif&ct=g)"
+             alt="GIF pemalu yang lucu"
+             class="w-48 h-48 mx-auto rounded-full mb-6 shadow-lg border-4 border-pink-400 object-cover">
+
+        <h1 class="font-question text-4xl md:text-5xl font-bold text-pink-400 mb-6">
+            Haiii Fanya Aluna Shyfa...
+        </h1>
+        <p class="text-2xl md:text-3xl mb-10 font-question text-gray-200">
+            Aku minta maaf yaaa,aku minta maaf bgtttt atas segala kesalahan yg aku buat kemarin, aku janji ga gitu lagi kok, ini yg terakhir kali, maafin aku yaaaa
+        </p>
+
+        <p class="text-xl md:text-2xl mb-10 font-semibold text-white">
+           Dimaafin apa engga ni hehhe 🥺👉👈
+        </p>
+
+        <!-- Button Container -->
+        <!-- Made 'relative' so the "No" button can move within it -->
+        <div class="relative flex flex-col sm:flex-row justify-center items-center gap-4 h-24">
+            <!-- The "Yes" Button -->
+            <button id="yes-button"
+                    class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-110 shadow-lg">
+                Maafin!
+            </button>
+
+            <!-- The "No" Button (The one that moves) -->
+            <button id="no-button"
+                    class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all duration-300 shadow-lg"
+                    style="left: 55%; transform: translateX(-50%);">
+                     Gak.
+            </button>
+        </div>
+    </div>
+
+    <!-- Success Message (Hidden) -->
+    <div id="success-message"
+         class="hidden bg-gray-900 bg-opacity-70 backdrop-blur-lg p-8 md:p-12 rounded-2xl shadow-2xl text-center max-w-lg w-full transition-all duration-500 ease-in-out transform scale-0 opacity-0">
+        <!-- Success/Love GIF -->
+        <img src="[https://media3.giphy.com/media/f44xXGtWf6qJMpk9MA/giphy.gif?cid=9b38fe91lejiw6uhimdbr38gzaqto1r96h6pm1cm4pj0xy7z&ep=v1_gifs_username&rid=giphy.gif&ct=g](https://media3.giphy.com/media/f44xXGtWf6qJMpk9MA/giphy.gif?cid=9b38fe91lejiw6uhimdbr38gzaqto1r96h6pm1cm4pj0xy7z&ep=v1_gifs_username&rid=giphy.gif&ct=g)"
+             alt="GIF cinta"
+             class="w-48 h-48 mx-auto rounded-full mb-6 shadow-lg border-4 border-green-400 object-cover">
+
+        <h1 class="font-question text-5xl md:text-6xl font-bold text-green-400 mb-6">
+            YAAAAAY!
+        </h1>
+        <p class="text-2xl md:text-3xl font-question text-gray-200 mb-8">
+            Makasih Ya Sayanggg Udah Mau Maafin Akuuu, Aku Janjiii Ga Gitu lagiiii ya sayangg, Aku Janji Mau Berubahhh Demii Kamuuuu Dan Demi Kebaikan aku jugaa sayanggg, Love you sayangkuuuu ❤️
+        </p>
+        <p class="text-lg text-gray-300">
+            (Kirim chat keaku setelah kamu melihat ini, okeiiiii?)
+        </p>
+    </div>
+
+    <script>
+        const yesButton = document.getElementById('yes-button');
+        const noButton = document.getElementById('no-button');
+        const mainContent = document.getElementById('main-content');
+        const successMessage = document.getElementById('success-message');
+
+        // Funny texts for the "No" button
+        const noButtonTexts = [
+            "Nggaaa.",
+            "Kamu Serius🥹? :(",
+            "Plissssss?",
+            "Ayoo!",
+            "Jangan Bilang Ga maafiinnn!",
+            "Plisss pencet 'Maafin' >.<",
+            "Maafin ya sayanggg:'(",
+            "Ehehehe",
+            "Love u sayangggg"
+        ];
+
+        let yesButtonScale = 1; // Initial scale of the "Yes" button
+        let noButtonTextIndex = 0; // Index for the "No" button text
+
+        // When the "Yes" button is clicked
+        yesButton.addEventListener('click', () => {
+            // Hide the main content
+            mainContent.classList.add('scale-0', 'opacity-0');
+
+            // Show the success message after 500ms
+            setTimeout(() => {
+                mainContent.classList.add('hidden');
+                successMessage.classList.remove('hidden', 'scale-0', 'opacity-0');
+                successMessage.classList.add('scale-100', 'opacity-100');
+            }, 500);
+        });
+
+        // Function to move the "No" button
+        function moveButton() {
+            // Get the viewport size
+            const viewportWidth = window.innerWidth;
+            const viewportHeight = window.innerHeight;
+
+            // Get the button size
+            const buttonWidth = noButton.offsetWidth;
+            const buttonHeight = noButton.offsetHeight;
+
+            // Calculate a new random position
+            let newX = Math.random() * (viewportWidth - buttonWidth - (viewportWidth * 0.1));
+            let newY = Math.random() * (viewportHeight - buttonHeight - (viewportHeight * 0.1));
+
+            newX += (viewportWidth * 0.05);
+            newY += (viewportHeight * 0.05);
+            
+            // Apply the new position
+            noButton.style.position = 'fixed'; 
+            noButton.style.left = `${newX}px`;
+            noButton.style.top = `${newY}px`;
+
+            // Enlarge the "Yes" button
+            yesButtonScale += 0.2;
+            yesButton.style.transform = `scale(${yesButtonScale})`;
+            yesButton.style.transition = 'transform 0.3s ease';
+
+            // Change the "No" button text
+            noButtonTextIndex = (noButtonTextIndex + 1) % noButtonTexts.length;
+            noButton.innerText = noButtonTexts[noButtonTextIndex];
+        }
+
+        // Move the button when the mouse hovers over it
+        noButton.addEventListener('mouseover', moveButton);
+
+        // Move the button when it's clicked (for mobile devices)
+        noButton.addEventListener('click', moveButton);
+    </script>
+</body>
+</html>
